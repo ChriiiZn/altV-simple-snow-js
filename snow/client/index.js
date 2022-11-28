@@ -1,5 +1,5 @@
 import { on } from 'alt-client'
-import { setForcePedFootstepsTracks, useParticleFxAsset, requestScriptAudioBank, requestNamedPtfxAsset } from "natives";
+import { setForcePedFootstepsTracks, setForceVehicleTrails, useParticleFxAsset, requestScriptAudioBank, requestNamedPtfxAsset } from "natives";
 
 on("connectionComplete", () => {
   // Wetter Physik Anfang
