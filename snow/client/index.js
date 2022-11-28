@@ -1,11 +1,13 @@
-import * as game from "natives";
+import { on } from 'alt-client'
+import { setForcePedFootstepsTracks, useParticleFxAsset, requestScriptAudioBank, requestNamedPtfxAsset } from "natives";
 
-// Wetter Physik Anfang
-  game.setForcePedFootstepsTracks(true);
-  game.useParticleFxAsset("core_snow");
-  game.setForceVehicleTrails(true)
-  game.requestScriptAudioBank("ICE_FOOTSTEPS", false, 0)
-  game.requestScriptAudioBank("SNOW_FOOTSTEPS", false, 0)
-  game.requestNamedPtfxAsset("core_snow");
-// Wetter Physik Ende
-
+on("connectionComplete", () => {
+  // Wetter Physik Anfang
+  setForcePedFootstepsTracks(true);
+  useParticleFxAsset("core_snow");
+  setForceVehicleTrails(true)
+  requestScriptAudioBank("ICE_FOOTSTEPS", false, 0)
+  requestScriptAudioBank("SNOW_FOOTSTEPS", false, 0)
+  requestNamedPtfxAsset("core_snow");
+  // Wetter Physik Ende
+});
