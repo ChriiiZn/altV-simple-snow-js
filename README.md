@@ -1,5 +1,11 @@
-Is it my first resources
+Is it my first resources 
 
-Snow with driving physic, footsteps...
+Snow with drive physic, footsteps...
 
-feel free to use
+
+-copy into resources Directory
+-and update your server.cfg with "snow"
+
+
+
+FEEL FREE TO USE
