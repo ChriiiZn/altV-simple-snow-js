@@ -1,0 +1,12 @@
+{
+  "name": "altv.snow",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "client.js",
+  "author": "ChriiiZn",
+  "license": "ISC",
+  "devDependencies": {
+   
+  }
+}
