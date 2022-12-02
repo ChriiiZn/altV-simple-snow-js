@@ -1,6 +1,6 @@
-It´s my first resources 
+## It´s my first resources 
 
-Snow with drive physic, footsteps...
+ Snow with driving physics, footsteps...
 
 
 -copy into resources Directory
