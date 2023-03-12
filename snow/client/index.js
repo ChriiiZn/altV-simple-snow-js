@@ -1,13 +1,14 @@
 import { on } from 'alt-client'
-import { setForcePedFootstepsTracks, setForceVehicleTrails, useParticleFxAsset, requestScriptAudioBank, requestNamedPtfxAsset } from "natives";
+import { useSnowFootVfxWhenUnsheltered, useSnowWheelVfxWhenUnsheltered, useParticleFxAsset, requestScriptAudioBank, requestNamedPtfxAsset } from "natives";
 
 on("connectionComplete", () => {
   //  --- Weather physic start ---
-  setForcePedFootstepsTracks(true);
+  useSnowFootVfxWhenUnsheltered(true);
   useParticleFxAsset("core_snow");
-  setForceVehicleTrails(true)
+  useSnowWheelVfxWhenUnsheltered(true)
   requestScriptAudioBank("ICE_FOOTSTEPS", false, 0)
   requestScriptAudioBank("SNOW_FOOTSTEPS", false, 0)
   requestNamedPtfxAsset("core_snow");
    // --- Weather physic end ---
 });
+
